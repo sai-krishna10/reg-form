@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(rgb(9, 107, 172), rgb(108, 17, 141));
+    flex-direction: column;
+}
+
+body .title {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.container {
+    height: 60vh;
+    width: 50vw;
+    background-color: aliceblue;
+    opacity: 0.7;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.container .header {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.container .userdetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .userdetails .userinput {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+.container .userdetails .userinput input,
+select {
+    height: 6vh;
+    width: 20vw;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container .userdetails .userinput1 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.container .userdetails .userinput2 {
+    display: flex;
+    margin: 10px;
+}
+
+
+.container .userdetails .userinput1 input {
+    height: 6vh;
+    width: 45vw;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.container .button input {
+    height: 7vh;
+    width: 45vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background: linear-gradient(rgb(203, 130, 230), rgb(109, 183, 233));
+
+}
+
+.container .button input:hover {
+    cursor: pointer;
+    background: linear-gradient(rgb(58, 169, 244), rgb(182, 74, 221));
+}
+
+
+@media only screen and (max-width:870px) {
+    .container .userdetails .userinput input {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:340px) {
+    body .title {
+        color: aliceblue;
+        font-size: 10px;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+
+    .container {
+        height: 50vh;
+        width: 90vw;
+        background-color: aliceblue;
+        opacity: 0.7;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .container {
+        height: 50vh;
+        width: 90vw;
+        background-color: aliceblue;
+        opacity: 0.7;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container .userdetails .userinput1 input {
+        height: 6vh;
+        width: 80vw;
+        border-radius: 5px;
+        padding: 10px;
+
+    }
+
+    .container .userdetails .userinput select {
+        height: 6vh;
+        width: 80vw;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+
+    .container .userdetails .userinput input {
+        font-size: 10px;
+    }
+
+    .container .userdetails .userinput input {
+        height: 6vh;
+        width: 80vw;
+        border-radius: 5px;
+        padding: 10px;
+
+    }
+
+}
